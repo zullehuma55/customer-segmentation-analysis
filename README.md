@@ -206,13 +206,12 @@ streamlit run app.py
 - Build an executive KPI dashboard.
 
 ---
- 
-- ## 👩 Author
+
+## 👩‍💻 Author
 
 **Huma Azmath Mohamad**
 
-Data Analyst
+📊 Data Analyst | Power BI | SQL | Python
 
-LinkedIn
-
-GitHub
+- 💼 **LinkedIn:** [Huma Azmath Mohamad](https://www.linkedin.com/in/huma-azmath-mohamad)
+- 💻 **GitHub:** [zullehuma55](https://github.com/zullehuma55)
