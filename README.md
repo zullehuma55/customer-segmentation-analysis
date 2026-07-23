@@ -53,3 +53,45 @@ This project uses the **Mall Customers Dataset**, a widely used dataset for cust
 | Spending Score (1–100) | Score assigned based on customer spending behavior |
 
 The dataset contains customer demographic and spending information, making it suitable for applying unsupervised machine learning techniques such as K-Means clustering.
+
+---
+
+## Technology Stack
+
+| Category | Tools & Technologies |
+|----------|----------------------|
+| Programming Language | Python |
+| Data Analysis | Pandas, NumPy |
+| Machine Learning | Scikit-learn (K-Means Clustering) |
+| Database | MySQL |
+| Data Visualization | Power BI, Matplotlib, Seaborn |
+| Web Application | Streamlit |
+| Version Control | Git & GitHub |
+| Development Environment | Visual Studio Code |
+
+---
+
+## Project Workflow
+
+The project follows a structured end-to-end data analytics workflow:
+
+1. **Data Collection**
+   - Imported the Mall Customers dataset.
+
+2. **Data Exploration**
+   - Performed Exploratory Data Analysis (EDA) to understand customer demographics and spending patterns.
+
+3. **Data Preparation**
+   - Checked data quality and prepared the features required for clustering.
+
+4. **Customer Segmentation**
+   - Applied the K-Means clustering algorithm to identify customer groups based on Annual Income and Spending Score.
+
+5. **Business Analysis**
+   - Used SQL to analyze customer segments and generate meaningful business insights.
+
+6. **Data Visualization**
+   - Built an interactive Power BI dashboard to visualize customer behavior and segment distribution.
+
+7. **Interactive Application**
+   - Developed a Streamlit application that allows users to explore customer segments dynamically.
