@@ -215,3 +215,6 @@ streamlit run app.py
 
 - 💼 **LinkedIn:** [Huma Azmath Mohamad](https://www.linkedin.com/in/huma-azmath-mohamad)
 - 💻 **GitHub:** [zullehuma55](https://github.com/zullehuma55)
+
+---
+Thank you for taking the time to explore this project. Feel free to connect with me on LinkedIn or explore my other projects on GitHub.
