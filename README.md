@@ -194,3 +194,25 @@ streamlit run app.py
 - Streamlit Application Development
 - Business Storytelling
 - Data-Driven Decision Making
+ 
+---
+
+## 🚀 Future Enhancements
+
+- Deploy the application on a cloud platform.
+- Integrate real-time customer data.
+- Experiment with additional clustering algorithms.
+- Add customer recommendation features.
+- Build an executive KPI dashboard.
+
+---
+ 
+- ## 👩 Author
+
+**Huma Azmath Mohamad**
+
+Data Analyst
+
+LinkedIn
+
+GitHub
