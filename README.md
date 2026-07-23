@@ -95,3 +95,86 @@ The project follows a structured end-to-end data analytics workflow:
 
 7. **Interactive Application**
    - Developed a Streamlit application that allows users to explore customer segments dynamically.
+---
+
+## Key Business Insights
+
+The customer segmentation analysis revealed several meaningful business insights:
+
+- **High Value Customers** generate the highest spending scores despite representing a smaller portion of the customer base.
+- **Mid Value Customers** form the largest customer segment, making them an important group for retention and targeted promotions.
+- **Potential Customers** present opportunities for personalized marketing campaigns to increase future spending.
+- Customer purchasing behavior varies significantly across different income levels and age groups.
+- Segment-wise analysis enables businesses to allocate marketing budgets more effectively and design customer-specific strategies.
+
+These insights demonstrate how data-driven customer segmentation can support better business decision-making and improve marketing effectiveness.
+---
+
+## Project Preview
+
+### Power BI Dashboard
+
+> *(Dashboard screenshot will be added here.)*
+
+### Streamlit Application
+
+> *(Streamlit application screenshot will be added here.)*
+---
+
+## Project Structure
+
+```text
+customer-segmentation-analysis/
+│
+├── app.py
+├── README.md
+├── requirements.txt
+├── data/
+├── notebooks/
+├── sql/
+├── powerbi/
+├── report/
+├── images/
+```
+
+---
+
+## How to Run the Project
+
+1. Clone this repository.
+
+```bash
+git clone https://github.com/your-username/customer-segmentation-analysis.git
+```
+
+2. Navigate to the project directory.
+
+```bash
+cd customer-segmentation-analysis
+```
+
+3. Install the required dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Launch the Streamlit application.
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## Skills Demonstrated
+
+- Data Cleaning & Preparation
+- Exploratory Data Analysis (EDA)
+- Customer Segmentation using K-Means Clustering
+- SQL Query Writing & Business Analysis
+- Data Visualization with Power BI
+- Interactive Dashboard Development
+- Streamlit Application Development
+- Business Storytelling
+- Data-Driven Decision Making
