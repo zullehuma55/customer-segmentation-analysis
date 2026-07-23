@@ -4,6 +4,22 @@
 
 ---
 
+## 📑 Table of Contents
+
+- Project Overview
+- Business Problem
+- Project Objectives
+- Dataset Information
+- Technology Stack
+- Project Workflow
+- Key Business Insights
+- Project Preview
+- Project Structure
+- How to Run
+- Skills Demonstrated
+- Future Enhancements
+- Author
+
 ## Project Overview
 
 Customer segmentation is an important business strategy that helps organizations understand customers purchasing behavior and deliver personalized marketing campaigns. Instead of treating every customer the same, businesses can group customers with similar characteristics and spending patterns.
