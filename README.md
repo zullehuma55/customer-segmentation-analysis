@@ -26,7 +26,7 @@ Customer segmentation is a powerful business strategy that enables organizations
 
 In this project, the Mall Customers dataset is analyzed using Python and the K-Means clustering algorithm to identify distinct customer segments. The resulting insights are further explored using SQL, visualized through Power BI dashboards, and presented in an interactive Streamlit application.
 
-This project demonstrates the end-to-end workflow followed by a Data Analyst—from data preparation and exploratory analysis to business intelligence and interactive reporting.
+This project demonstrates an end-to-end data analytics workflow—from data preparation and exploratory data analysis to machine learning, business intelligence, and interactive reporting.
 
 ---
 
