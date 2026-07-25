@@ -162,7 +162,7 @@ customer-segmentation-analysis/
 1. Clone this repository.
 
 ```bash
-git clone https://github.com/your-username/customer-segmentation-analysis.git
+git clone https://github.com/zullehuma55/customer-segmentation-analysis.git
 ```
 
 2. Navigate to the project directory.
