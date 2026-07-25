@@ -13,7 +13,7 @@ if uploaded_file is not None:
     # 🔥 SIDEBAR
     st.sidebar.header("Filter Options")
 
-    gender = st.sidebar.selectbox("Select Gender", df["Gender"].unique())
+    gender = st.sidebar.checkbox("Select Gender", df["Gender"].unique())
 
     age_range = st.sidebar.slider(
         "Select Age Range",
@@ -22,11 +22,20 @@ if uploaded_file is not None:
         (int(df["Age"].min()), int(df["Age"].max()))
     )
 
+     income_range = st.sidebar.slider(
+        "Select income Range",
+        int(df["Annual Income (k$)"].min()),
+        int(df["Annual Income (k$)"].max()),
+        (int(df["Annual Income (k$)"].min()), int(df["Annual Income (k$)"].max()))
+    )
+
     # 🔥 FILTER LOGIC
     filtered_df = df[
         (df["Gender"] == gender) &
         (df["Age"] >= age_range[0]) &
-        (df["Age"] <= age_range[1])
+        (df["Age"] <= age_range[1]) &
+        (df["Annual Income (k$)"] >= income_range[0]) &
+        (df["Annual Income (k$)"] <= income_range[1])
     ]
 
     # 🔥 KPI SECTION
