@@ -22,7 +22,7 @@
 
 ## Project Overview
 
-Customer segmentation is an important business strategy that helps organizations understand customers purchasing behavior and deliver personalized marketing campaigns. Instead of treating every customer the same, businesses can group customers with similar characteristics and spending patterns.
+Customer segmentation is a powerful business strategy that enables organizations to understand customer purchasing behaviour, identify high-value customer groups, and design more effective marketing strategies. Instead of treating every customer the same, businesses can group customers with similar characteristics and spending patterns.
 
 In this project, the Mall Customers dataset is analyzed using Python and the K-Means clustering algorithm to identify distinct customer segments. The resulting insights are further explored using SQL, visualized through Power BI dashboards, and presented in an interactive Streamlit application.
 
@@ -126,15 +126,17 @@ The customer segmentation analysis revealed several meaningful business insights
 These insights demonstrate how data-driven customer segmentation can support better business decision-making and improve marketing effectiveness.
 ---
 
-## Project Preview
+## 📸 Project Preview
 
-### Power BI Dashboard
+### 📊 Power BI Dashboard
 
-> *(Dashboard screenshot will be added here.)*
+![Power BI Dashboard](images/powerbi_dashboard.png)
 
-### Streamlit Application
+---
 
-> *(Streamlit application screenshot will be added here.)*
+### 🌐 Streamlit Application
+
+![Streamlit App](images/streamlit_app.png)
 ---
 
 ## Project Structure
