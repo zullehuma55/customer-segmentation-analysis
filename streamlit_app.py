@@ -6,48 +6,48 @@ st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
 st.title("📊 Customer Segmentation Dashboard")
 
-uploaded_file = st.file_uploader("Upload your dataset", type=["csv"])
+st.caption(
+    "This dashboard presents the results of customer segmentation using the Mall Customers dataset."
+)
 
-if uploaded_file is not None:
-    df = pd.read_csv(uploaded_file)
+df = pd.read_csv("data/Mall_Customers_Segmented.csv")
 
-    # 🔥 SIDEBAR
-    st.sidebar.header("Filter Options")
+   # 🔥 SIDEBAR
+st.sidebar.header("Filter Options")
 
-    #gender = st.sidebar.selectbox("Select Gender", df["Gender"].unique())
-    # Define options
-    gender_options = ["All"] + sorted(df["Gender"].unique())
+# Define options
+gender_options = ["All"] + sorted(df["Gender"].unique())
     
-    #Create the multiselect widget
-    selected_gender = st.sidebar.selectbox("Select Gender", gender_options)
+#Create the multiselect widget
+selected_gender = st.sidebar.selectbox("Select Gender", gender_options)
 
-    age_range = st.sidebar.slider(
+age_range = st.sidebar.slider(
         "Select Age Range",
         int(df["Age"].min()),
         int(df["Age"].max()),
         (int(df["Age"].min()), int(df["Age"].max()))
     )
 
-    income_range = st.sidebar.slider(
+income_range = st.sidebar.slider(
         "Select income Range",
         int(df["Annual Income (k$)"].min()),
         int(df["Annual Income (k$)"].max()),
         (int(df["Annual Income (k$)"].min()), int(df["Annual Income (k$)"].max()))
     )
 
-    spending_range = st.sidebar.slider(
+spending_range = st.sidebar.slider(
         "Select spending Range",
         int(df["Spending Score (1-100)"].min()),
         int(df["Spending Score (1-100)"].max()),
         (int(df["Spending Score (1-100)"].min()), int(df["Spending Score (1-100)"].max()))    )
     
-    segment_options = ["All"] + sorted(df["Segment"].unique())
-    segment_chosen = st.sidebar.selectbox("Customer Segment",segment_options)
+segment_options = ["All"] + sorted(df["Segment"].unique())
+segment_chosen = st.sidebar.selectbox("Customer Segment",segment_options)
 
 
-    # 🔥 FILTER LOGIC
-    filtered_df = df[
-        (df["Gender"].isin(["Male","Female"]) if selected_gender =="All" else df["Gender"]==selected_gender) &
+# 🔥 FILTER LOGIC
+filtered_df = df[
+     (df["Gender"].isin(["Male","Female"]) if selected_gender =="All" else df["Gender"]==selected_gender) &
         (df["Age"] >= age_range[0]) &
         (df["Age"] <= age_range[1]) &
         (df["Annual Income (k$)"] >= income_range[0]) &
@@ -59,9 +59,9 @@ if uploaded_file is not None:
 
     
 
-    # 🔥 KPI SECTION
+# 🔥 KPI SECTION
 
-    st.markdown("""
+st.markdown("""
 <style>
 /* KPI Card Styling */
 [data-testid="stMetric"] {
@@ -85,22 +85,22 @@ if uploaded_file is not None:
 }
 </style>
 """, unsafe_allow_html=True)
-    st.markdown("## 📌 Key Insights")
 
-    col1, col2, col3 = st.columns(3)
+st.markdown("## 📌 Key Insights")
+col1, col2, col3 = st.columns(3)
 
-    col1.metric("Total Customers", len(filtered_df))
+col1.metric("Total Customers", len(filtered_df))
     #col2.metric("Average Annual Income", round(filtered_df["Annual Income (k$)"].mean(), 1))
-    col2.metric("Average Annual Income", f"{filtered_df['Annual Income (k$)'].mean():.1f} k$")
+col2.metric("Average Annual Income", f"{filtered_df['Annual Income (k$)'].mean():.1f} k$")
 
-    col3.metric("Avg Spending Score", round(filtered_df["Spending Score (1-100)"].mean(), 1))
+col3.metric("Avg Spending Score", round(filtered_df["Spending Score (1-100)"].mean(), 1))
 
-    # 🔥 CHART SECTION (side by side)
-    st.markdown("## 📊 Visual Analysis")
+# 🔥 CHART SECTION (side by side)
+st.markdown("## 📊 Visual Analysis")
 
-    col1, col2 = st.columns(2)
+col1, col2 = st.columns(2)
 
-    with col1:
+with col1:
         st.subheader("Age Distribution")
         #age_counts = filtered_df["Age"].value_counts().sort_index()
         #st.bar_chart(age_counts)
@@ -112,7 +112,7 @@ if uploaded_file is not None:
         age_group_counts = filtered_df["Age Group"].value_counts().sort_index()
         st.bar_chart(age_group_counts)
 
-    with col2:
+with col2:
         segment_colors = {
     "High Value Customers": "#00CC96",      # Bright Green
     "Mid Value Customers": "#636EFA",       # Bright Blue
@@ -134,18 +134,15 @@ if uploaded_file is not None:
         )
         st.plotly_chart(fig,use_container_width = True)
 
-    # 🔥 DATA SECTION
-    st.markdown("## 📄 Data Preview")
-    st.dataframe(filtered_df)
+# 🔥 DATA SECTION
+st.markdown("## 📄 Data Preview")
+st.dataframe(filtered_df)
 
-    # 🔥 DOWNLOAD BUTTON
-    csv = filtered_df.to_csv(index=False).encode('utf-8')
-    st.download_button(
+# 🔥 DOWNLOAD BUTTON
+csv = filtered_df.to_csv(index=False).encode('utf-8')
+st.download_button(
         "Download Results",
         data=csv,
         file_name="customer_segmentation_results.csv",
         mime="text/csv"
     )
-
-else:
-    st.info("Please upload a CSV file to continue")
