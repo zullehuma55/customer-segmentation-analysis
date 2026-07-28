@@ -2,6 +2,10 @@
 
 > An end-to-end data analytics project that segments mall customers using K-Means clustering and transforms raw customer data into meaningful business insights through SQL, Power BI, and an interactive Streamlit application.
 
+## Live Application
+
+🔗 Streamlit App:
+https://customer-segmentation-app-borxaw44erkuuggxwprmuy.streamlit.app/
 ---
 
 ## 📑 Table of Contents
