@@ -1,11 +1,12 @@
 # Customer Segmentation Analysis using Python, SQL, Power BI & Streamlit
-Python | Power BI | SQL | Streamlit | Machine Learning | GitHub
+Python | Power BI) | SQL | Streamlit | Machine Learning | GitHub
 
 > An end-to-end data analytics project that segments mall customers using K-Means clustering and transforms raw customer data into meaningful business insights through SQL, Power BI, and an interactive Streamlit application.
 
-## Live Application
+## 🌐 Live Application
 
-🔗 Streamlit App:
+👉 **Try the Streamlit App**
+
 https://customer-segmentation-app-borxaw44erkuuggxwprmuy.streamlit.app/
 ---
 
@@ -33,6 +34,21 @@ Customer segmentation is a powerful business strategy that enables organizations
 In this project, the Mall Customers dataset is analyzed using Python and the K-Means clustering algorithm to identify distinct customer segments. The resulting insights are further explored using SQL, visualized through Power BI dashboards, and presented in an interactive Streamlit application.
 
 This project demonstrates an end-to-end data analytics workflow—from data preparation and exploratory data analysis to machine learning, business intelligence, and interactive reporting.
+
+---
+## ⭐ Repository Highlights
+
+✔ End-to-end Data Analytics Project
+
+✔ Machine Learning using K-Means Clustering
+
+✔ SQL Business Insights
+
+✔ Power BI Dashboard
+
+✔ Interactive Streamlit App
+
+✔ Business Recommendations
 
 ---
 
@@ -182,9 +198,20 @@ pip install -r requirements.txt
 4. Launch the Streamlit application.
 
 ```bash
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
+---
+## 📄 Project Report
 
+A detailed report containing:
+
+- Business Problem
+- EDA
+- Customer Segmentation
+- SQL Analysis
+- Strategic Recommendations
+
+Available inside the report folder.
 ---
 
 ## Skills Demonstrated
