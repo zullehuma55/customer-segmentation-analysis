@@ -139,9 +139,10 @@ with col2:
         x="Annual Income (k$)",
         y="Spending Score (1-100)",
         color="Segment",
-        configure_legend(disable=True),
+        legend=None,
         use_container_width=True
     )
+    
 # 🔥 DATA SECTION
 st.markdown("## 📄 Data Preview")
 st.dataframe(filtered_df)
