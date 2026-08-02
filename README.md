@@ -178,7 +178,7 @@ These insights demonstrate how data-driven customer segmentation can support bet
 ```text
 customer-segmentation-analysis/
 │
-├── app.py
+├── streamlit_app.py
 ├── README.md
 ├── requirements.txt
 ├── data/
