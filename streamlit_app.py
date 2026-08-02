@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+
 st.set_page_config(layout="wide", initial_sidebar_state="expanded")
 
 st.title("📊 Customer Segmentation Dashboard")
@@ -12,7 +13,9 @@ st.caption(
 
 df = pd.read_csv("data/Mall_Customers_Segmented.csv")
 
-   # 🔥 SIDEBAR
+# 🔥 SIDEBAR
+
+# Gender Filter
 st.sidebar.header("Filter Options")
 
 # Define options
@@ -21,6 +24,7 @@ gender_options = ["All"] + sorted(df["Gender"].unique())
 #Create the multiselect widget
 selected_gender = st.sidebar.selectbox("Select Gender", gender_options)
 
+# Age Filter
 age_range = st.sidebar.slider(
         "Select Age Range",
         int(df["Age"].min()),
@@ -28,6 +32,7 @@ age_range = st.sidebar.slider(
         (int(df["Age"].min()), int(df["Age"].max()))
     )
 
+# Income Filter
 income_range = st.sidebar.slider(
         "Select income Range",
         int(df["Annual Income (k$)"].min()),
@@ -35,6 +40,7 @@ income_range = st.sidebar.slider(
         (int(df["Annual Income (k$)"].min()), int(df["Annual Income (k$)"].max()))
     )
 
+# Sepnding Score Filter
 spending_range = st.sidebar.slider(
         "Select spending Range",
         int(df["Spending Score (1-100)"].min()),
@@ -56,8 +62,6 @@ filtered_df = df[
         (df["Spending Score (1-100)"] <= spending_range[1])&
         (df["Segment"] if segment_chosen == "All" else df["Segment"] == segment_chosen)
 ]
-
-    
 
 # 🔥 KPI SECTION
 
