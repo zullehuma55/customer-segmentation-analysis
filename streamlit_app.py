@@ -126,9 +126,9 @@ with col2:
 }
 
 
-        st.subheader("Income vs Spending by Segment")
+    st.subheader("Income vs Spending by Segment")
 
-		fig = px.scatter(
+	fig = px.scatter(
 		    filtered_df,
 		    x="Annual Income (k$)",
 		    y="Spending Score (1-100)",
@@ -137,7 +137,7 @@ with col2:
 		    hover_data=["CustomerID", "Age", "Gender"]
 		)
 
-		fig.update_layout(
+	fig.update_layout(
 		    height=550,
 		    legend=dict(
 		        orientation="h",
@@ -150,7 +150,7 @@ with col2:
 		    margin=dict(b=80)
 		)
 
-		st.plotly_chart(fig, use_container_width=True)
+	st.plotly_chart(fig, use_container_width=True)
 # 🔥 DATA SECTION
 st.markdown("## 📄 Data Preview")
 st.dataframe(filtered_df)
