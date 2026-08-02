@@ -126,15 +126,15 @@ with col2:
 }
 
 
-        st.subheader("Income vs Spending")
+        st.subheader("Income vs Spending by Customer Segment")
         fig = px.scatter(
             filtered_df,
             x="Annual Income (k$)",
             y="Spending Score (1-100)",
-	    color = 'Segment',
+	        color = 'Segment',
             color_discrete_map=segment_colors,
-            hover_data=["CustomerID", "Age", "Gender"],
-            title="Income vs Spending by Customer Segment"
+            hover_data=["CustomerID", "Age", "Gender"]
+            
         )
         st.plotly_chart(fig,use_container_width = True)
 
