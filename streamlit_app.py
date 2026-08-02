@@ -136,9 +136,18 @@ fig = px.scatter(
 		    color_discrete_map=segment_colors,
 		    hover_data=["CustomerID", "Age", "Gender"]
 		)
-
+fig.update_traces(
+    marker=dict(
+        size=10,
+        line=dict(
+            width=1,
+            color="white"
+        )
+    )
+)
 fig.update_layout(
 		    height=550,
+	        margin=dict(b=120),
 		    legend=dict(
 		        orientation="h",
 		        yanchor="top",
@@ -146,8 +155,8 @@ fig.update_layout(
 		        xanchor="center",
 		        x=0.5,
 		        title=None
-		    ),
-		    margin=dict(b=80)
+		    )
+		    
 		)
 
 st.plotly_chart(fig, use_container_width=True)
