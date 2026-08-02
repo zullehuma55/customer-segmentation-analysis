@@ -138,7 +138,8 @@ with col2:
         scatter_data,
         x="Annual Income (k$)",
         y="Spending Score (1-100)",
-        use_container_width=True
+        use_container_width=True,
+        color = "Segment"
     )
 
 # 🔥 DATA SECTION
