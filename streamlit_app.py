@@ -126,32 +126,20 @@ with col2:
 }
 
 
-st.subheader("Income vs Spending by Segment")
 
-fig = px.scatter(
-		    filtered_df,
-		    x="Annual Income (k$)",
-		    y="Spending Score (1-100)",
-		    color="Segment",
-		    color_discrete_map=segment_colors,
-		    hover_data=["CustomerID", "Age", "Gender"]
-		)
-fig.update_traces(
-    marker=dict(
-        size=8,
-		line=dict(
-            width=1,
-            color="white"
-        )
-        
+with col2:
+    st.subheader("Income vs Spending")
+
+    scatter_data = filtered_df[
+        ["Annual Income (k$)", "Spending Score (1-100)"]
+    ]
+
+    st.scatter_chart(
+        scatter_data,
+        x="Annual Income (k$)",
+        y="Spending Score (1-100)",
+        use_container_width=True
     )
-)
-fig.update_layout(
-    height=500,
-    showlegend=False
-
-)
-st.plotly_chart(fig, use_container_width=False)
 
 # 🔥 DATA SECTION
 st.markdown("## 📄 Data Preview")
