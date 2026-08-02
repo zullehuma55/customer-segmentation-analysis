@@ -147,19 +147,21 @@ fig.update_traces(
     )
 )
 fig.update_layout(
-		    height=550,
-	        margin=dict(b=120),
-		    legend=dict(
-		        orientation="h",
-		        yanchor="top",
-		        y=-0.20,
-		        xanchor="center",
-		        x=0.5,
-		        title=None
-		    )
-		    
-		)
+    height=500,
+    showlegend=False,
 
+    xaxis=dict(
+        showgrid=True,
+        gridcolor="rgba(200,200,200,0.2)",
+        gridwidth=0.5
+    ),
+
+    yaxis=dict(
+        showgrid=True,
+        gridcolor="rgba(200,200,200,0.2)",
+        gridwidth=0.5
+    )
+)
 st.plotly_chart(fig, use_container_width=True)
 # 🔥 DATA SECTION
 st.markdown("## 📄 Data Preview")
