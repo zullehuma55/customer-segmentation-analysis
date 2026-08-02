@@ -139,6 +139,10 @@ fig = px.scatter(
 fig.update_traces(
     marker=dict(
         size=10,
+		line=dict(
+            width=1,
+            color="white"
+        )
         
     )
 )
