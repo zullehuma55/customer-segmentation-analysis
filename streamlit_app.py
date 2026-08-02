@@ -159,7 +159,7 @@ fig.update_layout(
     yaxis=dict(
         showgrid=True,
         gridcolor="rgba(200,200,200,0.2)",
-        gridwidth=0.5
+        gridwidth=0.1
     )
 )
 st.plotly_chart(fig, use_container_width=True)
