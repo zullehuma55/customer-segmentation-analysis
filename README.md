@@ -161,13 +161,17 @@ These insights demonstrate how data-driven customer segmentation can support bet
 
 ![Customer Segment Recommendations](images/powerbi_segment_recommendation_dashboard.png)
 
-### 🌐 Streamlit Application
+### 🌐 Streamlit Dashboard
 
 ![Streamlit Dashboard](images/streamlit_dashboard.png)
 
+### 🌐 Streamlit Chart
+
 ![Streamlit Chart](images/streamlit_charts.png)
 
-#![Streamlit Data](images/streamlit_data-download.png)
+### 🌐 Streamlit Data Download
+
+![Streamlit Data](images/streamlit_data-download.png)
 ---
 
 ## Project Structure
