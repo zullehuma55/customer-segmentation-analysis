@@ -9,23 +9,22 @@ Python | Power BI) | SQL | Streamlit | Machine Learning | GitHub
 
 https://customer-segmentation-app-borxaw44erkuuggxwprmuy.streamlit.app/
 ---
-
-
 ## 📑 Table of Contents
 
-- Project Overview
-- Business Problem
-- Project Objectives
-- Dataset Information
-- Technology Stack
-- Project Workflow
-- Key Business Insights
-- Project Preview
-- Project Structure
-- How to Run
-- Skills Demonstrated
-- Future Enhancements
-- Author
+- [Project Overview](#project-overview)
+- [Business Problem](#business-problem)
+- [Project Objectives](#project-objectives)
+- [Dataset Information](#dataset-information)
+- [Technology Stack](#technology-stack)
+- [Project Workflow](#project-workflow)
+- [Key Business Insights](#key-business-insights)
+- [Project Preview](#project-preview)
+- [Project Structure](#project-structure)
+- [How to Run the Project](#how-to-run-the-project)
+- [Project Report](#project-report)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Future Enhancements](#future-enhancements)
+- [Author](#author)
 
 ## Project Overview
 
