@@ -148,19 +148,8 @@ fig.update_traces(
 )
 fig.update_layout(
     height=500,
-    showlegend=False,
+    showlegend=False
 
-    xaxis=dict(
-        showgrid=True,
-        gridcolor="rgba(200,200,200,0.2)",
-        gridwidth=0.1
-    ),
-
-    yaxis=dict(
-        showgrid=True,
-        gridcolor="rgba(200,200,200,0.2)",
-        gridwidth=0.1
-    )
 )
 st.plotly_chart(fig, use_container_width=False)
 
