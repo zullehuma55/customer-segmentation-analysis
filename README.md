@@ -7,7 +7,7 @@ Python | Power BI) | SQL | Streamlit | Machine Learning | GitHub
 
 👉 **Try the Streamlit App**
 
-https://customer-segmentation-app-borxaw44erkuuggxwprmuy.streamlit.app/
+https://customer-segmentation-analysis-liveapp.streamlit.app/
 ---
 ## 📑 Table of Contents
 
