@@ -139,7 +139,7 @@ with col2:
         x="Annual Income (k$)",
         y="Spending Score (1-100)",
         color="Segment",
-        .configure_legend(disable=True),
+        configure_legend(disable=True),
         use_container_width=True
     )
 # 🔥 DATA SECTION
