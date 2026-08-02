@@ -139,7 +139,6 @@ with col2:
         x="Annual Income (k$)",
         y="Spending Score (1-100)",
         color="Segment",
-        legend=None,
         use_container_width=True
     )
     
