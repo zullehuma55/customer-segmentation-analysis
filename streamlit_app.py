@@ -126,7 +126,7 @@ with col2:
 }
 
 
-        st.subheader("Income vs Spending by Customer Segment")
+        st.subheader("Customer Segment")
         fig = px.scatter(
             filtered_df,
             x="Annual Income (k$)",
