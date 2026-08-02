@@ -153,7 +153,7 @@ fig.update_layout(
     xaxis=dict(
         showgrid=True,
         gridcolor="rgba(200,200,200,0.2)",
-        gridwidth=0.5
+        gridwidth=0.1
     ),
 
     yaxis=dict(
