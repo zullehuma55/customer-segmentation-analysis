@@ -135,7 +135,7 @@ with col2:
             color_discrete_map=segment_colors,
             hover_data=["CustomerID", "Age", "Gender"]
                     )
-	    fig.update_layout(
+	     fig.update_layout(
             legend=dict(
             orientation="h",
             yanchor="top",
