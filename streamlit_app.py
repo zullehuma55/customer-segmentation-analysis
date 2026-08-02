@@ -135,13 +135,12 @@ with col2:
     ]
 
     st.scatter_chart(
-        scatter_data,
+        filtered_df,
         x="Annual Income (k$)",
         y="Spending Score (1-100)",
-        use_container_width=True,
-        color = "Segment"
+        color="Segment",
+        use_container_width=True
     )
-
 # 🔥 DATA SECTION
 st.markdown("## 📄 Data Preview")
 st.dataframe(filtered_df)
