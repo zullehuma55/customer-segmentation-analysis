@@ -162,7 +162,8 @@ fig.update_layout(
         gridwidth=0.1
     )
 )
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, use_container_width=False)
+
 # 🔥 DATA SECTION
 st.markdown("## 📄 Data Preview")
 st.dataframe(filtered_df)
