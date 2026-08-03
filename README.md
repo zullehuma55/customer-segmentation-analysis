@@ -148,29 +148,29 @@ These insights demonstrate how data-driven customer segmentation can support bet
 
 ## 📸 Project Preview
 
-### 📋 Executive Summary Dashboard
+### 📋 Power BI - Executive Summary Dashboard
 
-![Executive Summary Dashboard](images/powerbi_executive_summary_dashboard.png)
+![Power BI - Executive Summary Dashboard](images/powerbi_executive_summary_dashboard.png)
 
-### 📊 Customer Insights Dashboard
+### 📊 Power BI - Customer Insights Dashboard
 
-![Customer Insights Dashboard](images/powerbi_customer_insights_dashboard.png)
+![Power BI - Customer Insights Dashboard](images/powerbi_customer_insights_dashboard.png)
 
-### 💡 Customer Segment Recommendations
+### 💡 Power BI - Customer Segment Recommendations
 
-![Customer Segment Recommendations](images/powerbi_segment_recommendation_dashboard.png)
+![Power BI - Customer Segment Recommendations](images/powerbi_segment_recommendation_dashboard.png)
 
-### 🌐 Streamlit Dashboard
+### 🌐 Streamlit - Dashboard
 
-![Streamlit Dashboard](images/streamlit_dashboard.png)
+![Streamlit - Dashboard](images/streamlit_dashboard.png)
 
-### 🌐 Streamlit Chart
+### 🌐 Streamlit - Charts
 
-![Streamlit Chart](images/streamlit_charts.png)
+![Streamlit - Charts](images/streamlit_charts.png)
 
-### 🌐 Streamlit Data Download
+### 🌐 Streamlit - Data Download
 
-![Streamlit Data](images/streamlit_data-download.png)
+![Streamlit - Data](images/streamlit_data-download.png)
 ---
 
 ## Project Structure
